@@ -1,0 +1,7 @@
+# robots.txt — RenovasiPro
+# TODO: Ganti domain dengan domain bisnis Anda
+
+User-agent: *
+Allow: /
+
+Sitemap: https://renovasipro.com/sitemap.xml
