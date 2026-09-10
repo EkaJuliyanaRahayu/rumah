@@ -39,7 +39,7 @@ export const business = {
   // TODO: Ganti dengan informasi kontak sebenarnya
   // ----------------------------------------------------------
   email: "email@example.com",
-  address: "Kirana Blok e3 no 31 Rt10/Rw21, Kel.Telaga Murni, Kec.Cikarang Barat",
+  address: "Perumahan Kirana Cikarang Blok E3 No 31 Rt10/Rw21, Kel.Telaga Murni, Kec.Cikarang Barat",
 
   // ----------------------------------------------------------
   // AREA LAYANAN
@@ -64,11 +64,8 @@ export const business = {
 
   // ----------------------------------------------------------
   // ASET VISUAL
-  // TODO: Ganti dengan path/URL logo dan hero image asli
-  // Logo: letakkan file di public/images/logo.png
-  // Hero: letakkan file di public/images/hero.jpg
   // ----------------------------------------------------------
-  logo: null, // Saat null, akan menampilkan inisial teks
+  logo: "/images/logo.png",
   heroImage:
     "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80",
   // TODO: Ganti heroImage dengan foto proyek asli client:
@@ -102,7 +99,7 @@ export const business = {
   // ----------------------------------------------------------
   stats: [
     { value: "10+", label: "Proyek Selesai" },
-    { value: "5+", label: "Tahun Pengalaman" },
+    { value: "15+", label: "Tahun Pengalaman" },
     { value: "100%", label: "Kepuasan Pelanggan" },
     { value: "Gratis", label: "Konsultasi" },
   ],

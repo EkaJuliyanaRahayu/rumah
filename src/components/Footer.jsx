@@ -20,7 +20,7 @@ const serviceLinks = [
   "Renovasi Rumah",
   "Renovasi Kos-kosan",
   "Renovasi Kantor / Ruko",
-  "Bangunan Baru"
+  "Bangun Rumah"
 ];
 
 
@@ -33,11 +33,13 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <a href="#beranda" className="flex items-center gap-2">
               {business.logo ? (
-                <img
-                  src={business.logo}
-                  alt={business.name}
-                  className="h-10 w-auto object-contain"
-                />
+                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-white p-1 shadow-sm flex-shrink-0">
+                  <img
+                    src={business.logo}
+                    alt={business.name}
+                    className="h-full w-full object-contain"
+                  />
+                </div>
               ) : (
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent-500 text-white font-bold text-lg">
                   {business.shortName.charAt(0)}
