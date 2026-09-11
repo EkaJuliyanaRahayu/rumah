@@ -29,7 +29,7 @@ export const business = {
   // TODO: Ganti dengan nomor WhatsApp bisnis (tanpa + atau spasi)
   // Format: kode negara + nomor (contoh: 6281234567890)
   // ----------------------------------------------------------
-  whatsapp: "628XXXXXXXXXX",
+  whatsapp: "6281280731154",
 
   whatsappMessage:
     "Halo, saya ingin berkonsultasi mengenai jasa renovasi rumah.",
@@ -38,7 +38,7 @@ export const business = {
   // KONTAK
   // TODO: Ganti dengan informasi kontak sebenarnya
   // ----------------------------------------------------------
-  email: "email@example.com",
+  email: "jackjaya78@gmail.com",
   address: "Perumahan Kirana Cikarang Blok E3 No 31 Rt10/Rw21, Kel.Telaga Murni, Kec.Cikarang Barat",
 
   // ----------------------------------------------------------
@@ -55,11 +55,9 @@ export const business = {
 
   // ----------------------------------------------------------
   // SOSIAL MEDIA
-  // TODO: Ganti dengan URL akun sosial media sebenarnya
   // ----------------------------------------------------------
   socialMedia: {
-    instagram: "https://instagram.com/username",
-    facebook: "https://facebook.com/username",
+    facebook: "https://www.facebook.com/share/p/1MV4Mx8PLj/?mibextid=wwXIfr",
   },
 
   // ----------------------------------------------------------
