@@ -1,4 +1,6 @@
+import { MessageCircle } from "lucide-react";
 import { useInView } from "../hooks/useInView";
+import { getWhatsAppUrl } from "../config/business";
 
 const advantages = [
   {
@@ -31,9 +33,9 @@ const advantages = [
   },
   {
     id: 5,
-    title: "Konsultasi gratis",
+    title: "Konsultasi mudah",
     description:
-      "Dapatkan konsultasi rencana renovasi tanpa biaya di awal.",
+      "Dapatkan diskusi rencana renovasi yang solutif dan sesuai kebutuhan.",
     icon: "💬",
   },
   {
@@ -101,6 +103,26 @@ export default function WhyChooseUs() {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Action CTA */}
+        <div
+          className={`mt-12 text-center transition-all duration-700 delay-300 ${
+            isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+          }`}
+        >
+          <a
+            href={getWhatsAppUrl(
+              "Halo, saya ingin mendiskusikan rencana renovasi rumah saya."
+            )}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2.5 rounded-xl bg-primary-900 px-7 py-3.5 text-sm sm:text-base font-semibold text-white shadow-md transition-all duration-200 hover:bg-primary-800 hover:-translate-y-0.5"
+          >
+            <MessageCircle size={18} className="text-accent-400" />
+            <span>Diskusikan Rencana Anda</span>
+            <span className="text-base">→</span>
+          </a>
         </div>
       </div>
     </section>

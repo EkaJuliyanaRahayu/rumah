@@ -5,6 +5,7 @@ import {
   DollarSign,
   HeadphonesIcon,
   Hammer,
+  MessageCircle,
 } from "lucide-react";
 import { useInView } from "../hooks/useInView";
 import { business, getWhatsAppUrl } from "../config/business";
@@ -50,8 +51,8 @@ export default function About() {
                   <CheckCircle className="h-6 w-6 text-accent-500" />
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-primary-900">100%</p>
-                  <p className="text-xs text-primary-500">Kepuasan Pelanggan</p>
+                  <p className="text-sm font-bold text-primary-900">15+</p>
+                  <p className="text-xs text-primary-500">Tahun Pengalaman</p>
                 </div>
               </div>
             </div>
@@ -102,13 +103,16 @@ export default function About() {
 
             {/* CTA */}
             <a
-              href={getWhatsAppUrl()}
+              href={getWhatsAppUrl(
+                "Halo, saya ingin menceritakan kebutuhan renovasi rumah saya."
+              )}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary-900 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-200 hover:bg-primary-800 hover:-translate-y-0.5 hover:shadow-xl"
+              className="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary-900 px-6 py-3.5 text-sm font-semibold text-white shadow-lg transition-all duration-200 hover:bg-primary-800 hover:-translate-y-0.5 hover:shadow-xl"
             >
-              Kenali Kami Lebih Lanjut
-              <span className="text-lg">→</span>
+              <MessageCircle size={16} className="text-accent-400" />
+              <span>Ceritakan Kebutuhan Anda</span>
+              <span className="text-base">→</span>
             </a>
           </div>
         </div>

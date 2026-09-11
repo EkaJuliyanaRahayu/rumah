@@ -1,6 +1,6 @@
 import { MessageCircle, Phone } from "lucide-react";
 import { useInView } from "../hooks/useInView";
-import { business, getWhatsAppUrl } from "../config/business";
+import { getWhatsAppUrl } from "../config/business";
 
 export default function CTA() {
   const [ref, isInView] = useInView();
@@ -33,19 +33,20 @@ export default function CTA() {
 
           {/* Subheadline */}
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-primary-300 sm:text-lg">
-            Diskusikan kebutuhan renovasi Anda bersama kami dan dapatkan
-            konsultasi awal secara gratis.
+            Punya rencana renovasi? Ceritakan kebutuhan Anda, dan mari diskusikan langkah berikutnya.
           </p>
 
           {/* CTA Button */}
           <a
-            href={getWhatsAppUrl()}
+            href={getWhatsAppUrl(
+              "Halo, saya punya rencana renovasi rumah dan ingin mendiskusikan langkah berikutnya."
+            )}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-10 inline-flex items-center gap-3 rounded-xl bg-accent-500 px-10 py-5 text-lg font-bold text-white shadow-2xl shadow-accent-500/30 transition-all duration-300 hover:bg-accent-600 hover:shadow-accent-500/50 hover:-translate-y-1 sm:text-xl"
           >
             <MessageCircle size={24} />
-            💬 Konsultasi via WhatsApp
+            <span>Mulai Renovasi</span>
           </a>
         </div>
       </div>

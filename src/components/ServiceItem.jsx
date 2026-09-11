@@ -1,4 +1,4 @@
-import { ArrowRight, Check, MessageCircle, ChevronDown } from "lucide-react";
+import { ArrowRight, Check, MessageCircle } from "lucide-react";
 import { business, getWhatsAppUrl } from "../config/business";
 
 export default function ServiceItem({ service, isActive, onToggle }) {
@@ -101,18 +101,18 @@ export default function ServiceItem({ service, isActive, onToggle }) {
             {/* WhatsApp Action CTA */}
             <div className="mt-6 pt-5 border-t border-surface-200/60 flex flex-wrap items-center justify-between gap-4">
               <span className="text-xs sm:text-sm text-primary-500 font-medium">
-                Konsultasikan rencana {service.title.toLowerCase()} Anda bersama {business.shortName}.
+                Diskusikan rencana {service.title.toLowerCase()} Anda bersama {business.shortName}.
               </span>
               <a
                 href={getWhatsAppUrl(
-                  `Halo ${business.shortName}, saya ingin berkonsultasi mengenai ${service.title}. Mohon informasi lebih lanjut.`
+                  `Halo ${business.shortName}, saya tertarik dengan layanan ${service.title} dan ingin mendiskusikan kebutuhan renovasi saya.`
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl bg-accent-500 px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-accent-500/20 transition-all duration-200 hover:bg-accent-600 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0"
               >
                 <MessageCircle className="h-4 w-4" />
-                Konsultasi Renovasi →
+                Tanyakan Layanan Ini →
               </a>
             </div>
           </div>

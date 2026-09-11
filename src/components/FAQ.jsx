@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, MessageCircle } from "lucide-react";
 import faqData from "../data/faq";
 import { useInView } from "../hooks/useInView";
+import { getWhatsAppUrl } from "../config/business";
 
 function FAQItem({ item, isOpen, onToggle }) {
   return (
@@ -75,11 +76,35 @@ export default function FAQ() {
           {faqData.map((item) => (
             <FAQItem
               key={item.id}
-              item={item}
               isOpen={openId === item.id}
+              item={item}
               onToggle={() => handleToggle(item.id)}
             />
           ))}
+        </div>
+
+        {/* FAQ Support CTA */}
+        <div
+          className={`mt-10 text-center transition-all duration-700 delay-300 ${
+            isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+          }`}
+        >
+          <p className="text-sm sm:text-base text-primary-600">
+            Masih belum menemukan jawaban yang Anda cari? Hubungi kami melalui WhatsApp.
+          </p>
+          <div className="mt-4 flex justify-center">
+            <a
+              href={getWhatsAppUrl(
+                "Halo, saya membaca FAQ di website dan masih memiliki pertanyaan seputar renovasi rumah."
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-xl bg-primary-900 px-6 py-3 text-sm font-semibold text-white shadow-md transition-all duration-200 hover:bg-primary-800 hover:-translate-y-0.5"
+            >
+              <MessageCircle size={16} className="text-accent-400" />
+              <span>Chat Kami</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

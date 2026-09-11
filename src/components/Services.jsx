@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowRight, Sparkles, MessageCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import services from "../data/services";
 import ServiceItem from "./ServiceItem";
 import { business, getWhatsAppUrl } from "../config/business";
@@ -45,13 +45,13 @@ export default function Services() {
             <div className="mt-8 pt-6 border-t border-surface-200/80">
               <a
                 href={getWhatsAppUrl(
-                  `Halo ${business.shortName}, saya ingin berkonsultasi mengenai rencana renovasi rumah saya.`
+                  `Halo ${business.shortName}, saya ingin mendiskusikan kebutuhan renovasi rumah saya.`
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 text-base font-bold text-primary-900 transition-colors duration-200 hover:text-accent-500"
               >
-                <span>Konsultasi Gratis</span>
+                <span>Diskusikan Kebutuhan Anda</span>
                 <div className="flex h-9 w-9 items-center justify-center rounded-full bg-accent-50 text-accent-500 transition-all duration-300 group-hover:bg-accent-500 group-hover:text-white group-hover:translate-x-1">
                   <ArrowRight className="h-4 w-4" />
                 </div>

@@ -52,19 +52,19 @@ export default function Portfolio() {
             Ingin mewujudkan renovasi seperti ini?
           </h3>
           <p className="mt-2 text-sm sm:text-base text-primary-600">
-            Konsultasikan rencana renovasi Anda bersama kami.
+            Diskusikan kebutuhan dan inspirasi proyek renovasi Anda bersama tim kami.
           </p>
           <div className="mt-6 flex justify-center">
             <a
               href={getWhatsAppUrl(
-                `Halo ${business.shortName}, saya melihat portofolio proyek di website dan ingin berkonsultasi mengenai rencana renovasi rumah saya.`
+                `Halo ${business.shortName}, saya tertarik dengan proyek seperti yang ditampilkan di website dan ingin berdiskusi mengenai kebutuhan renovasi.`
               )}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 rounded-xl bg-accent-500 px-7 py-3.5 text-sm sm:text-base font-bold text-white shadow-lg shadow-accent-500/25 transition-all duration-200 hover:bg-accent-600 hover:-translate-y-0.5 active:translate-y-0"
             >
               <MessageCircle className="h-5 w-5" />
-              <span>Konsultasi Gratis →</span>
+              <span>Diskusikan Proyek Serupa</span>
             </a>
           </div>
         </div>

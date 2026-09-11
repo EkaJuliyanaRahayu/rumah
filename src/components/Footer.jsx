@@ -130,6 +130,17 @@ export default function Footer() {
             <ul className="mt-4 space-y-4">
               <li>
                 <a
+                  href={getWhatsAppUrl("Halo, saya ingin bertanya seputar jasa renovasi rumah.")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg bg-primary-900 border border-primary-800 px-3.5 py-2 text-xs font-semibold text-primary-200 transition-all hover:bg-accent-500 hover:text-white hover:border-accent-500 hover:-translate-y-0.5"
+                >
+                  <MessageCircle size={15} />
+                  <span>Chat WhatsApp</span>
+                </a>
+              </li>
+              <li>
+                <a
                   href={getWhatsAppUrl()}
                   target="_blank"
                   rel="noopener noreferrer"

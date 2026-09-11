@@ -14,7 +14,7 @@ const faq = [
     id: 1,
     question: "Berapa biaya renovasi rumah?",
     answer:
-      "Biaya renovasi tergantung pada jenis pekerjaan, luas area, dan material yang digunakan. Kami akan memberikan estimasi biaya secara detail setelah melakukan survey lokasi. Silakan hubungi kami untuk konsultasi dan estimasi gratis.",
+      "Biaya renovasi tergantung pada jenis pekerjaan, luas area, dan material yang digunakan. Kami akan memberikan estimasi biaya secara detail setelah melakukan survey lokasi. Silakan hubungi kami untuk konsultasi dan estimasi biaya secara transparan.",
   },
   {
     id: 2,

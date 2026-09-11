@@ -2,7 +2,7 @@ import { MessageCircle, ArrowDown, CheckCircle } from "lucide-react";
 import { business, getWhatsAppUrl } from "../config/business";
 
 const highlights = [
-  "Konsultasi Gratis",
+  "Konsultasi Sesuai Kebutuhan",
   "Pengerjaan Profesional",
   "Hasil Berkualitas",
 ];
@@ -14,7 +14,6 @@ export default function Hero() {
       className="relative min-h-screen flex items-center overflow-hidden"
     >
       {/* Background Image */}
-      {/* TODO: Ganti background image dengan foto proyek asli client */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -50,7 +49,26 @@ export default function Hero() {
             {business.description}
           </p>
 
-          
+          {/* CTAs */}
+          <div className="animate-fade-in-up animation-delay-300 mt-8 flex flex-wrap items-center gap-4">
+            <a
+              href={getWhatsAppUrl(
+                "Halo, saya ingin mulai berkonsultasi mengenai rencana renovasi rumah saya."
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2.5 rounded-xl bg-accent-500 px-7 py-4 text-base font-bold text-white shadow-xl shadow-accent-500/30 transition-all duration-200 hover:bg-accent-600 hover:-translate-y-0.5 active:translate-y-0"
+            >
+              <MessageCircle size={20} />
+              <span>Mulai Konsultasi</span>
+            </a>
+            <a
+              href="#portofolio"
+              className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-6 py-4 text-base font-semibold text-white backdrop-blur-sm transition-all duration-200 hover:bg-white/20 hover:-translate-y-0.5 active:translate-y-0"
+            >
+              Lihat Proyek Kami
+            </a>
+          </div>
 
           {/* Highlights */}
           <div className="animate-fade-in-up animation-delay-400 mt-12 flex flex-wrap gap-x-8 gap-y-3">

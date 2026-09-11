@@ -221,7 +221,7 @@ export default function Navbar() {
             className="flex items-center justify-center gap-2 rounded-lg bg-accent-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-accent-500/25 transition-all hover:bg-accent-600"
           >
             <MessageCircle size={16} />
-            <span>Konsultasi Gratis</span>
+            <span>Konsultasi</span>
           </a>
         </div>
       </div>

@@ -66,10 +66,7 @@ export const business = {
   // ASET VISUAL
   // ----------------------------------------------------------
   logo: "/images/logo.png",
-  heroImage:
-    "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80",
-  // TODO: Ganti heroImage dengan foto proyek asli client:
-  // heroImage: "/images/hero.jpg",
+  heroImage: "/images/hero.jpg",
 
   aboutImage:
     "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&h=500&fit=crop",
@@ -94,14 +91,20 @@ export const business = {
   },
 
   // ----------------------------------------------------------
-  // STATISTIK & KLAIM
-  // TODO: Sesuaikan dengan data riil client (jangan mengarang)
+  // TRUST HIGHLIGHTS & NILAI UTAMA
+  // Nilai kredibilitas bisnis tanpa klaim atau angka yang dibuat-buat
   // ----------------------------------------------------------
+  trustHighlights: [
+    { primary: "15+", label: "Tahun Pengalaman", isNumeric: true },
+    { primary: "Konsultasi", label: "Sesuai Kebutuhan", isNumeric: false },
+    { primary: "Proses", label: "Terencana", isNumeric: false },
+    { primary: "Hasil", label: "Fokus Pada Kualitas", isNumeric: false },
+  ],
   stats: [
-    { value: "10+", label: "Proyek Selesai" },
-    { value: "15+", label: "Tahun Pengalaman" },
-    { value: "100%", label: "Kepuasan Pelanggan" },
-    { value: "Gratis", label: "Konsultasi" },
+    { value: "15+", label: "Tahun Pengalaman", isNumeric: true },
+    { value: "Konsultasi", label: "Sesuai Kebutuhan", isNumeric: false },
+    { value: "Proses", label: "Terencana", isNumeric: false },
+    { value: "Hasil", label: "Fokus Pada Kualitas", isNumeric: false },
   ],
 
   // ----------------------------------------------------------
